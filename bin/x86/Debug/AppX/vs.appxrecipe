@@ -19,7 +19,7 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>C:\Users\Admin\source\repos\jsonCategory\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>12B509B8F09A96C924CB59D124F4A8CD129D25EDCB7CC5772245DF433E7F6044</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>E4E8F5ACD7C05821CFE76700C2F908B6FCE9E603AB58364BB4787607DE31DE9B</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>abfe913b-0ad7-4c69-9a35-122755aee322_1.0.0.0_x86__5gyrq6psz227t</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>abfe913b-0ad7-4c69-9a35-122755aee322_5gyrq6psz227t!App</RegisteredUserModeAppID>
     <RegisteredPackageID>abfe913b-0ad7-4c69-9a35-122755aee322</RegisteredPackageID>
@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\Admin\source\repos\jsonCategory\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-09-25T04:47:28.137</Modified>
+      <Modified>2020-10-02T01:31:55.058</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Admin\source\repos\jsonCategory\bin\x86\Debug\jsonCategory.exe">
       <PackagePath>entrypoint\jsonCategory.exe</PackagePath>
-      <Modified>2020-09-25T04:47:27.770</Modified>
+      <Modified>2020-10-02T01:31:54.295</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Admin\.nuget\packages\newtonsoft.json\12.0.3\lib\netstandard2.0\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
@@ -110,35 +110,35 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Admin\source\repos\jsonCategory\bin\x86\Debug\jsonCategory.xr.xml">
       <PackagePath>jsonCategory.xr.xml</PackagePath>
-      <Modified>2020-09-25T01:48:33.811</Modified>
+      <Modified>2020-10-02T01:31:54.073</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Admin\source\repos\jsonCategory\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2020-09-25T04:47:27.612</Modified>
+      <Modified>2020-10-02T01:31:54.113</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Admin\source\repos\jsonCategory\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2020-09-25T04:47:27.612</Modified>
+      <Modified>2020-10-02T01:31:54.113</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Admin\source\repos\jsonCategory\bin\x86\Debug\Pages\Category.xbf">
       <PackagePath>Pages\Category.xbf</PackagePath>
-      <Modified>2020-09-25T04:47:27.613</Modified>
+      <Modified>2020-10-02T01:31:54.113</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Admin\source\repos\jsonCategory\bin\x86\Debug\Pages\Favourite.xbf">
       <PackagePath>Pages\Favourite.xbf</PackagePath>
-      <Modified>2020-09-25T04:47:27.613</Modified>
+      <Modified>2020-10-02T01:31:54.113</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Admin\source\repos\jsonCategory\bin\x86\Debug\Pages\Home.xbf">
       <PackagePath>Pages\Home.xbf</PackagePath>
-      <Modified>2020-09-25T04:47:27.613</Modified>
+      <Modified>2020-10-02T01:31:54.113</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Admin\source\repos\jsonCategory\bin\x86\Debug\Pages\ProductDetail.xbf">
       <PackagePath>Pages\ProductDetail.xbf</PackagePath>
-      <Modified>2020-09-25T04:47:27.613</Modified>
+      <Modified>2020-10-02T01:31:54.113</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Admin\source\repos\jsonCategory\bin\x86\Debug\Pages\ShoppingCart.xbf">
       <PackagePath>Pages\ShoppingCart.xbf</PackagePath>
-      <Modified>2020-09-25T04:47:27.613</Modified>
+      <Modified>2020-10-02T01:31:54.113</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -146,11 +146,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Admin\source\repos\jsonCategory\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2020-09-25T00:55:49.530</Modified>
+      <Modified>2020-09-30T03:08:50.113</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Admin\source\repos\jsonCategory\bin\x86\Debug\Core\jsonCategory.exe">
       <PackagePath>jsonCategory.exe</PackagePath>
-      <Modified>2020-09-25T04:47:28.135</Modified>
+      <Modified>2020-10-02T01:31:55.053</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

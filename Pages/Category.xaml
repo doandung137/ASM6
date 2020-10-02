@@ -16,17 +16,7 @@
                 <Button x:Name="ButtonBack" Click="ButtonBack_Click" Style="{StaticResource NavigationBackButtonNormalStyle}" />
             </CommandBar.Content>
         </CommandBar>
-        <TextBlock  Text="Giá : " HorizontalTextAlignment="Center" Height="35" Width="35" x:Name="gia" FontSize="19" Margin="850,0,0,0" />
-        <FontIcon RelativePanel.RightOf="gia"  Tapped="FontIconUp_Tapped" x:Name="up" FontFamily="Segoe MDL2 Assets" Glyph="&#xE74A;" Height="25" Width="25" Margin="17,0,0,0" />
-        <FontIcon RelativePanel.RightOf="up" Tapped="FontIconDown_Tapped" x:Name="down" FontFamily="Segoe MDL2 Assets" Glyph="&#xE74B;" Height="25" Width="25" Margin="17,0,0,0" />
-        <TextBox  x:Name="search"  PlaceholderText="Search..." Height="35" Width="220" Margin="1000,0,0,0" TextChanged="search_TextChanged" />
-        <Button Height="35" Width="35" x:Name="Btn_search" RelativePanel.RightOf="search" Click="Btn_search_Click">
-            <FontIcon x:Name="Heart" FontFamily="Segoe MDL2 Assets" Glyph="&#xE721;" RenderTransformOrigin="0.5,0.5" Margin="-7,3,-7,-2" UseLayoutRounding="False" d:LayoutRounding="Auto"  >
-                <FontIcon.RenderTransform>
-                    <CompositeTransform Rotation="269.905"/>
-                </FontIcon.RenderTransform>
-            </FontIcon>
-        </Button>
+        
         <TextBlock  RelativePanel.AlignHorizontalCenterWithPanel="True" Margin="10" FontWeight="SemiBold" FontSize="18" Foreground="#232323" x:Name="CatName" Text="{x:Bind CatDetail.name}"/>
         <GridView Margin="0,20,0,0" RelativePanel.Below="CmBar" x:Name="ProductList">
             <GridView.ItemTemplate>

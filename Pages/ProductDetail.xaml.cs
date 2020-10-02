@@ -59,7 +59,6 @@ namespace jsonCategory.Pages
 
         private void BtnOrder_Click(object sender, RoutedEventArgs e)
         {
-          //   var qty = Qty.Text.Where(char.IsDigit);
             if (Convert.ToInt32(Qty.Text) <= 0 )
             {
                 CartItem item = new CartItem(Detail.id, Detail.name, Detail.image, Detail.price, 1);

@@ -39,8 +39,7 @@ namespace jsonCategory.Pages
       
         protected async override void OnNavigatedTo(NavigationEventArgs e)
         {
-            MenuItem menuItem = e.Parameter as MenuItem;
-            CatDetail = menuItem;
+            CatDetail = e.Parameter as MenuItem;
             ButtonBack.IsEnabled = this.Frame.CanGoBack;
             CategoryDetail catDetail = await _categoryService.CategoryDetail(CatDetail.id);
             ProductList.ItemsSource = catDetail.data.foods;
@@ -61,19 +60,7 @@ namespace jsonCategory.Pages
 
         private void btn_tym(object sender, RoutedEventArgs e)
         {
-            Product product = ProductList.ItemsSource as Product;
-            SQLiteHelper sQLiteHelper = SQLiteHelper.createInstance();
-
-            SQLiteConnection sQLiteConnection = sQLiteHelper.sQLiteConnection;
-            var sqlString = "INSERT INTO Products(id,name,image,description,price) VALUES(?,?,?,?,?)";
-            var stt = sQLiteConnection.Prepare(sqlString);
-            stt.Bind(1, product.id);
-            stt.Bind(2, product.name);
-            stt.Bind(3, product.image);
-            stt.Bind(4, product.description);
-            stt.Bind(5, product.price);
-            stt.Step();
-            MainPage.mainFrame.Navigate(typeof(Favourite));
+            
         }
 
         private void GridViewItem_Tapped(object sender, TappedRoutedEventArgs e)
@@ -84,62 +71,7 @@ namespace jsonCategory.Pages
 
         private ProductServices _productServices = new ProductServices();
 
-        private async void Btn_search_Click(object sender, RoutedEventArgs e)
-        {
-            List<Product> listSearch = new List<Product>();
-            ProductList productList = await _productServices.TodaySpecial();
-            if (productList != null)
-            {
-                foreach (var item in productList.data)
-                {
-                    if (item.name.Contains(search.Text))
-                    {
-                        listSearch.Add(item);
-                    }
-                }      
-                ProductList.ItemsSource = listSearch;
-            }
-        }
-
-        private async void search_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            if(search.Text == "")
-            {
-                CategoryDetail catDetail = await _categoryService.CategoryDetail(CatDetail.id);
-                ProductList.ItemsSource = catDetail.data.foods;
-            }
-        }
-
-        private async void FontIconUp_Tapped(object sender, TappedRoutedEventArgs e)
-        {
-            List<Product> listSearch = new List<Product>();
-            CategoryDetail catDetail = await _categoryService.CategoryDetail(CatDetail.id);
-         
-            if (catDetail != null)
-            { 
-               foreach( var item in catDetail.data.foods)
-                {
-                   listSearch.Add(item);
-                }
-                ProductList.ItemsSource = listSearch.OrderBy(K => K.price).ToList();
-            }
-
-        }
-
-        private async void FontIconDown_Tapped(object sender, TappedRoutedEventArgs e)
-        {
-            List<Product> listSearch = new List<Product>();
-            CategoryDetail catDetail = await _categoryService.CategoryDetail(CatDetail.id);
-
-            if (catDetail != null)
-            {
-                foreach (var item in catDetail.data.foods)
-                {
-                  listSearch.Add(item);
-                }
-                ProductList.ItemsSource = listSearch.OrderByDescending(K => K.price).ToList();
-            }
-
-        }
+       
     }
 }
+    
